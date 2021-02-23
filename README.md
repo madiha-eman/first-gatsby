@@ -45,4 +45,49 @@
 
     - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    # gatsby:
+ 
+ 1: How to make project 
+ 
+ ** You'll need to install the CLI interface to create a site with Gatsby
+ ** open cmd and run command "npm i --g gatsby-cli"
+ ** then run command "npm init gatsby" 
+ then they will ask u some question i will recommended you just select 'no I'll add it later' 
+ ** cd yourProjectName
+ ** Start the local development server with 
+    npm run develop
+    
+    
+     # gatsby-contentfull (graphql database)
+     
+     ** you have to install contentfull plugins module from gatsby website "npm install gatsby-source-contentful"
+     
+     ** then make .env file on route and install 'npm i dotenv' and import in gatsby-config.js file
+     
+     
+     ** go to contentfull platform copy and  paste 
+ // In your gatsby-config.js
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `your_space_id`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+  ],
+}
+
+in .env file copy key from content full and paste in your file
